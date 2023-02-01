@@ -1,4 +1,4 @@
-# English_is_too_difficult
+# English is too difficult
 
 ## [PAN++: Towards Efficient and Accurate End-to-End Spotting of Arbitrarily-Shaped Text](https://arxiv.org/abs/2105.00405)
 
