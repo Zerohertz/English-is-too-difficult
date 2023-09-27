@@ -150,3 +150,23 @@
 
 + Pseudo: 허위의, 가짜의, 모조의
 + Interim: (영구적인 것이 나올 때까지 존속시키기 위한) 중간 (임시/과도)의
+
+---
+
+# [DINOv2: Learning Roubust Visual Features without Supervision](https://arxiv.org/abs/2304.07193)
+
+> The recent `breakthroughs` in natural language processing for model pretraining on large quantities of data have opened the way for similar foundation models in computer vision.
+
++ Breakthrough: 돌파구
+
+> This work shows that existing pretraining methods, expecially self-supervised methods, can produce such features if trained on enough `curated` data from `diverse` sources.
+
++ Curated: 전문적인 식견으로 엄선한
++ Diverse: 다양한
+
+> `In terms of` data, we propose an automatic pipeline to build a `dedicated`, diverse, and curated image dataset instead of uncurated data, as `typically` done in the self-supervised `literature`.
+
++ In terms of: ...면에서, ...에 관하여
++ Dedicated: 전념하는, 헌신적인, 전용의
++ Typically: 보통, 일반적으로, 전형적으로, 특징적으로
++ Literature: 문학, 문헌
