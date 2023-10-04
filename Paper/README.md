@@ -170,3 +170,46 @@
 + Dedicated: 전념하는, 헌신적인, 전용의
 + Typically: 보통, 일반적으로, 전형적으로, 특징적으로
 + Literature: 문학, 문헌
+
+> In terms of models, we train a ViT model with 1B parameters and distill it into a series of smaller models that `surpass` the best available all-purpose features, OpenCLIP on most of the benchmarks at image and pixel levels.
+
++ Surpass: 능가하다, 뛰어넘다
+
+> Learning `task-agnostic` pretrained `representations` have become the standard in Natural Language Proceesing (NLP).
+
++ Task-agnostic: 작업에 구애받지 않는
++ Representation: 묘사, 표현, 나타낸 것, 대표자를 내세움
+
+> One can use these features "`as they are`", i.e., without fine-tuning, and achieve performances on downstream tasks that are significantly better than those produced by task-specific models.
+
++ As they are: 그대로
+
+> This success has been `fueled` by pretraining on large quantities of raw text using `pretext` objectives, such as language modeling or word vectors, that require no supervision.
+
++ Fueled: 준비된, 흥분한
++ Pretext: 구실, 핑계, Pretrain 과정에서 사용되는 간접적인 학습 목표나 작업
+
+|항목|Pretrain (사전 학습)|Pretext (사전 텍스트 또는 간접적인 작업)|
+|:-:|:-:|:-:|
+|정의|모델을 특정한 주요 작업에 대해 학습시키기 전에 먼저 다른 데이터셋이나 작업에 대해 학습시키는 과정입니다.|사전 학습 과정에서 사용되는 간접적인 학습 목표나 작업을 나타냅니다.|
+|목적|모델에 기본적인 패턴, 특징, 구조 등을 학습시키기 위한 것입니다.|특정 작업에 직접적으로 사용되지 않더라도, 유용한 특징이나 표현을 학습하는 데 도움을 주는 작업입니다.|
+|예시|대량의 텍스트 데이터를 사용하여 언어 모델을 사전 학습시킨 후, 특정 작업(예: 감정 분석)을 위해 미세 조정됩니다.|이미지를 임의로 변형하고 원래 형태로 복원하는 작업, 문장의 다음 단어 예측 등 레이블이 필요하지 않거나 적은 양의 레이블만 필요로 하는 작업입니다.|
+
+> These models should generate visual features that work `out of the box` on any task, both at the image level, e.g., image classification, and pixel level, e.g., segmentation.
+
++ Out of the box: 발군의, 특별 취급, 즉시 사용 가능하게, 별도의 추가 조정 없이
+
+> We `revisit` existing `discriminative` self-supervised approaches that learn features at both the image and patch level, such as iBOT, and we `reconsider` some of their design choices `under the lens of` a larger dataset.
+
++ Revisit: 다시 방문하다, 다시 논의하다, 재검토하다
++ Discriminative: 식별하는, 차이를 분간하는, 차별적인
++ Reconsider: 재고하다, 재검토하다
++ Under the lens of: ~의 관점에서, ~의 시각에서
+
+> Most of our technical contributions are `tailored` toward stabilizing and accelerating discriminative self-supervised learning when scaling in model and data sizes.
+
++ Tailored: 잘 맞도록 만든, 맞춤의
+
+> These improvements make our approach around 2× faster and require 3× less memory than similar discriminative self-supervised methods, allowing us to `leverage` longer training with larger batch sizes.
+
++ Leverage: 영향력
