@@ -213,3 +213,11 @@
 > These improvements make our approach around 2× faster and require 3× less memory than similar discriminative self-supervised methods, allowing us to `leverage` longer training with larger batch sizes.
 
 + Leverage: 영향력
+
+> This idea has become `prevalent` with the work of Doersch et al. (2015), where they train by predicting the context of a given patch.
+
++ Prevalent: 일반적인, 널리 퍼져 있는
+
+> Recently, the `emergence` of patch-based architectures, like ViTs, has led to a revisit of inpainting for pre-training, potentially in feature space.
+
++ Emergence: 나오다, 드러나다, 알려지다, 부상하다
