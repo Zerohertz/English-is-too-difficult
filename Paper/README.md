@@ -1,3 +1,12 @@
+- [PAN++: Towards Efficient and Accurate End-to-End Spotting of Arbitrarily-Shaped Text](#pan-towards-efficient-and-accurate-end-to-end-spotting-of-arbitrarily-shaped-text)
+- [EfficientDet: Scalable and Efficient Object Detection](#efficientdet-scalable-and-efficient-object-detection)
+- [Deep Learning Logo Detection with Data Expansion by Synthesising Context](#deep-learning-logo-detection-with-data-expansion-by-synthesising-context)
+- [Logo detection and brand recognition with one-stage logo detection framework and simplified resnet50 backbone](#logo-detection-and-brand-recognition-with-one-stage-logo-detection-framework-and-simplified-resnet50-backbone)
+- [Character Region Awareness for Text Detection](#character-region-awareness-for-text-detection)
+- [DINOv2: Learning Roubust Visual Features without Supervision](#dinov2-learning-roubust-visual-features-without-supervision)
+
+---
+
 # [PAN++: Towards Efficient and Accurate End-to-End Spotting of Arbitrarily-Shaped Text](https://arxiv.org/abs/2105.00405)
 
 > PAN++ is based on the kernel representation that reformulates a text line as a text kernel (central region) surrounded by `peripheral` pixels.
