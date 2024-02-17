@@ -4,6 +4,7 @@
 - [Logo detection and brand recognition with one-stage logo detection framework and simplified resnet50 backbone](#logo-detection-and-brand-recognition-with-one-stage-logo-detection-framework-and-simplified-resnet50-backbone)
 - [Character Region Awareness for Text Detection](#character-region-awareness-for-text-detection)
 - [DINOv2: Learning Roubust Visual Features without Supervision](#dinov2-learning-roubust-visual-features-without-supervision)
+- [SOLAR 10.7B: Scaling Large Language Models with Simple yet Effective Depth Up-Scaling](#solar-107b-scaling-large-language-models-with-simple-yet-effective-depth-up-scaling)
 
 ---
 
@@ -230,3 +231,122 @@
 > Recently, the `emergence` of patch-based architectures, like ViTs, has led to a revisit of inpainting for pre-training, potentially in feature space.
 
 + Emergence: 나오다, 드러나다, 알려지다, 부상하다
+
+---
+
+# [SOLAR 10.7B: Scaling Large Language Models with Simple yet Effective Depth Up-Scaling](https://arxiv.org/abs/2312.15166)
+
+> We introduce SOLAR 10.7B, a large language model (LLM) with 10.7 billion parameters, `demonstrating` superior performance in various natural language processing (NLP) tasks.
+
++ Demonstrate: 보여주다, 설명하다, 입증하다
+
+> Inspired by recent efforts to efficiently up-scale LLMs, we present a method for scaling LLMs called depth up-scaling (DUS), which `encompasses` depthwise scaling and continued pretraining.
+
++ Encompass: 포함하다, 아우르다, 에워싸다
+
+> Building on the DUS model, we additionally present SOLAR 10.7B-Instruct, a variant fine-tuned for `instruction`-following `capabilities`, `surpassing` Mixtral-8x7B-Instruct.
+
++ Instruction: 설명, 지시, 설명하는
++ Capability: 능력, 역량
++ Surpass: 능가하다, 뛰어넘다
+
+> To efficiently `tackle` the above, recent works in scaling language models such as a mixture of experts (MoE) have been proposed.
+
++ Tackle: (힘든 문제, 상황과) 씨름하다, (문제, 힘든 상황에 대해) 솔직하게 말하다, (축구 등에서의) 태클
+
+> While those approaches are able to efficiently and effectively scale-up LLMs, they often require `non-trivial` changes to the training and inference framework, which `hinders` `widespread` applicability.
+
++ Non-trivial: 비단순 경우, 특별한 사례
++ Hinder: 저해 (방해)하다, ~을 못하게 하다
++ Widespread: 광범위한, 널리 퍼진
+
+> Unlike (Komatsuzaki et al., 2022), DUS does not scale the model using MoE and `rather` use a depthwise scaling method `analogous` to Tan and Le (2019) which is adapted for the LLM architecture.
+
++ Rather: 꽤, 약간, 상당히, 좀, 약간
++ Analogous: 유사한
+
+> `Thus`, there are no additional modules or `dynamism` as with MoE, making DUS immediately `compatible` with easy-to-use LLM frameworks such as HuggingFace with no changes to the training or inference framework for maximal efficiency
+
++ Thus: 따라서, 그러므로
++ Dynamism: 역동성
++ Compatible: 호환이 되는, 양립할 수 있는, 화합할 수 있는
+
+> We have also developed SOLAR 10.7B-Instruct, a variant fine-tuned for tasks requiring strict `adherence` to complex `instructions`.
+
++ Adherence: 고수, 준수
++ Instruction: 설명, 지시, 설명하는
+
+> It significantly outperforms the Mixtral-8x7B-Instruct model across various evaluation metrics, `evidencing` an advanced `proficiency` that exceeds the `capabilities` of even larger models in terms of benchmark performance.
+
++ Evidence: 증거, 흔적, 증언 (입증)하다, 증거가 되다
++ Proficiency: 숙달, 능숙, 능란
++ Capability: 능력, 역량
+
+> While existing methods such as Komatsuzaki et al. (2022) use MoE to scale-up the model architecture, we `opt` for a different depthwise scaling strategy inspired by Tan and Le (2019).
+
++ Opt: 선택하다, 결정을 내리다
+
+> By adopting the Llama 2 architecture for our base model, we aim to `leverage` the `vast` pool of community resources while introducing novel modifications to further enhance its capabilities
+
++ Leverage: 영향력, 지렛대 사용, 지렛대의 힘
++ Vast: 어마어마한, 광막히 넓은, 광대한
+
+> From the base model with n layers, we set the target layer count s for the scaled model, which is `largely` `dictated` by the available hardware.
+
++ Largely: 크게, 대체로, 주로
++ Dictate: 받아쓰게 하다, 지시하다, 명령
+
+> The base model with n layers is duplicated for `subsequent` modification.
+
++ Subsequent: 그 다음의, 차후의
+
+> Note that n = 32 from our base model and we set s = 48 considering our hardware `constraints` and the efficiency of the scaled model, i.e., fitting between 7 and 13 billion parameters.
+
++ Constraint: 제약, 제한, 통제
+
+> We consider that the particular way of depthwise scaling has isolated the `heterogeneity` in the scaled model which allowed for this fast performance recovery.
+
++ Heterogeneity: 이종, 이류, 이질성
+
+> `Delving` deeper into the heterogeneity of the scaled model, a simpler alternative to depthwise scaling could be to just repeat its layers once more, i.e., from n to 2n layers.
+
++ Delve: 뒤지다, 탐구하다
+
+> However, this results in maximum layer distance at the `seam`, which may be too significant of a `discrepancy` for continued pretraining to quickly resolve.
+
++ Seam: 솔기, 층, 경계선, 이음매
++ Discrepancy: 차이, 불일치
+
+> We `attribute` the success of DUS to reducing such discrepancies in both the depthwise scaling and the continued pretraining steps.
+
++ Attribute: (~을 ~의) 결과로 보다, 자질, 속성
+
+> We also `hypothesize` that other methods of depthwise scaling could also work for DUS, as long as the discrepancy in the scaled model is `sufficiently` contained before the continued pretraining step.
+
++ Hypothesize: 가설을 세우다
++ Sufficiently: 충분하게, 넉넉하게, 다량으로
+
+> A DUS model can `seamlessly` integrate into existing training and inference frameworks while maintaining high efficiency.
+
++ Seamlessly: 솔기가 없는, 아주 매끄러운, 천의무봉의
+
+> In the instruction tuning stage, the model is trained to follow `instructions` in a QA format
+
++ Instruction: 설명, 지시, 설명하는
+
+> A `rundown` of how we crafted the dataset is as follows.
+
++ Rundown: 축소, 설명, 묘사
+
+> First, seed math data are collected from the Math dataset only, to avoid `contamination` with commonly used bench- mark datasets such as GSM8K.
+
++ Contamination: 오염
+
+> Thus, we `speculate` that the rephrased answer to the rephrased question is a better answer than the original answer, possibly due to the `interim` rephrasing step.
+
++ Speculate: 추측(짐작)하다, 투기하다
++ Interim: 중간(임시, 과도)의, 잠정적인
+
+> We `aggregate` the tuples from the rephrased question-answer pairs and call the resulting dataset ‘Synth. Math-Alignment‘.
+
++ Aggregate: 합계, 총액
