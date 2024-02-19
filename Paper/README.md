@@ -5,6 +5,7 @@
 - [Character Region Awareness for Text Detection](#character-region-awareness-for-text-detection)
 - [DINOv2: Learning Roubust Visual Features without Supervision](#dinov2-learning-roubust-visual-features-without-supervision)
 - [SOLAR 10.7B: Scaling Large Language Models with Simple yet Effective Depth Up-Scaling](#solar-107b-scaling-large-language-models-with-simple-yet-effective-depth-up-scaling)
+- [Image Clustering Conditioned on Text Criteria](#image-clustering-conditioned-on-text-criteria)
 
 ---
 
@@ -350,3 +351,30 @@
 > We `aggregate` the tuples from the rephrased question-answer pairs and call the resulting dataset ‘Synth. Math-Alignment‘.
 
 + Aggregate: 합계, 총액
+
+---
+
+# [Image Clustering Conditioned on Text Criteria](https://arxiv.org/abs/2310.18297)
+
+> Image clustering has been studied as a `prototypical` unsupervised learning task, and it has been used to organize large volumes of visual data, to reduce the cost of labeling an unlabeled image dataset and to enhance image `retrieval` systems.
+
++ Prototypical: 원형
++ Retrieval: 되찾아 옴, 회수, 검색
+
+> But, classical clustering methods offer no direct mechanism for the user to control the clustering criterion; the clustering criteria for existing methods are likely determined by the `inductive` biases of the neural networks and the loss function, data augmentations, and feature extractors used within the method.
+
++ Inductive: 귀납적인, (전기) 유도의
+
+> Recently, language and multi-modal foundation models have received significant recent interest due to their ability to understand and follow human instructions at an `unprecedented` level.
+
++ Unprecedented: 전례 없는, 미증유의
+
+> IC|TC requires a minimal and practical degree of human `intervention` and `grants` the user significant control over the clustering results `in return`, and we argue that this makes IC|TC more practical and powerful compared to the classical purely unsupervised clustering methods.
+
++ Intervention: 참여, 발언, 중재, 원조, 지지, 도움, 개입, 간섭
++ Grant: 승인 (허락) 하다, 인정하다, 보조금
++ In return: 대신에, 답례로
+
+> In Step 1, the vision-language model (VLM) extracts `salient` features from the image in the form of text descriptions.
+
++ Salient: 가장 중요한, 핵심적인, 가장 두드러진, 현저한
