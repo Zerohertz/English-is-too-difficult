@@ -3,6 +3,8 @@
 - [Paper](https://github.com/Zerohertz/English-is-too-difficult/blob/main/Paper/README.md)
 - [Terminology](https://github.com/Zerohertz/English-is-too-difficult/blob/main/Terminology/README.md)
 
+<div align=center>
+
 |      Word      |                Mean                 |
 | :------------: | :---------------------------------: |
 |  feasibility   |    실행할 수 있음, (실행) 가능성    |
@@ -92,3 +94,5 @@
 |    formally    |             공식적으로              |
 |   proximity    |               가까움                |
 |    vacancy     |          결원, 공석, 빈 방          |
+
+</div>
