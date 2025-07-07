@@ -11,3 +11,9 @@
 - RDMA: Remote Direct Memory Access
 - RoCE: RDMA over Converged Ethernet
 - NIC: Network Interface Card
+
+# CPython
+
+- CST: Concrete Syntax Tree
+- AST: Abstract Syntax Tree
+- CFG: Control Flow Graph
